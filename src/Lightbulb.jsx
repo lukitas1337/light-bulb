@@ -1,3 +1,6 @@
+// declaring LightBulb component in a const, telling it to receive props and returning the JSX for the light bulb
+// accessing props.lightState to change the class of the container div which corresponds with css styles in Style.css "lightState" is coming from the App component and is defined as variable bulbClass which is either "container night" or "container" based on the state of lightIsOn, set in the App component after a click on the button
+
 const LightBulb = (props) => {
     return (
       <div className= {props.lightState}>
